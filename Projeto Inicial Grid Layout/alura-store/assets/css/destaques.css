@@ -1,0 +1,134 @@
+.destaques{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 33.33% 33.33% 33.33%;
+    height: calc(100vh - 50px);
+    grid-gap: 0.2rem;
+}
+
+.caixa{
+    display: flex;
+    align-items: flex-start;
+    
+}
+
+.titulo_fortnite{
+    width: auto;
+    text-align: center;
+}
+
+.titulo_pubg{
+    position: relative;
+    text-align: center;
+    /* width: 100%; */
+}
+
+.titulo_slack{
+    width: auto;
+    text-align: center;
+}
+
+.titulo_whats{
+    width: auto;
+    text-align: center;
+}
+
+.titulo_csgo{
+    width: auto;
+    text-align: center;
+}
+
+.destaques__titulo_diferente{
+    background: black;
+    opacity: .8;
+    color: #fdfdfd;
+    padding: 0.6rem;
+}
+
+.destaques__titulo{
+    position: absolute;
+    background: black;
+    opacity: .8;
+    color: #fdfdfd;
+    padding: 0.6rem;
+    /* height: 5%; */
+   /*  box-sizing: unset; */
+}
+
+.destaques__principal {
+    /* transition: .3s;
+    background-image: url('../img/fortnite.jpg'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
+    overflow: hidden;
+    /* grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3; */
+
+    grid-column: 1 / 4;
+    grid-row: 1 / 3;
+
+}
+
+/* Imagem do pubg*/
+.destaques__secundario:nth-child(2) {
+    background-image: url('../img/pubg.jpg'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    grid-column: 4/4;
+    grid-row: 1/1;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+}
+
+.img-fortnite:hover{
+    opacity: 0.7;
+    transition: 1000ms;
+}
+
+/*Div do whatsapp*/
+.destaques__secundario:nth-child(4) {
+    grid-column: 4/4;
+    grid-row: 3/3
+}
+
+/*Div do csgo*/
+.destaques__secundario:nth-child(5) {
+    grid-column: 3/3;
+    grid-row: 3/3
+}
+
+.destaques__categorias{
+    grid-column: 1/3;
+    grid-row: 3/3;
+}
+
+.destaques__categorias___lista{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: space-between;
+    /* align-items: center; */
+   /*  margin-left: 4%; */
+}
+
+.destaques__categorias___item{
+    background: #E5FFCC;
+    border-left: 5px solid transparent;
+    color: #333333;
+    display: flex;
+    padding: 1rem;
+    width: 50%;
+
+}
+
+.destaques__categorias___link{
+    color: inherit;
+}

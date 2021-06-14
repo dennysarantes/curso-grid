@@ -1,0 +1,30 @@
+.app {
+    background: #f1f1f1;
+    display: grid;  
+    font-family: Arial, Helvetica, sans-serif;
+    grid-template-areas:  /*Aqui é onde se cria o template da grid*/
+    "cabecalho"
+    "conteudo"
+    "rodape";
+
+    grid-template-columns: auto;
+    grid-template-rows: 3% auto auto; /*São 3 colunas que determinam as áreas, essas áreas são classes no html*/
+    margin: 0 2rem; 
+}
+
+.cabecalho {
+    grid-area: cabecalho;
+}
+ 
+.conteudo {
+    grid-area: conteudo;
+}
+
+.rodape {
+    grid-area: rodape;
+    background: #fdfdfd;
+    color: #333333;
+    font-size: .9rem;
+    padding-bottom: 3rem;
+    text-align: center;
+}
